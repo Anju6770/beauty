@@ -65,7 +65,7 @@ class Payment extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return "Please enter your email";
+                      return "Please enter name of card";
                     }
                     return null;
                   },
@@ -82,7 +82,7 @@ class Payment extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return "Please enter your email";
+                      return "Please enter card number";
                     }
                     return null;
                   },
@@ -104,7 +104,7 @@ class Payment extends StatelessWidget {
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Please enter your email";
+                            return "Please enter  date";
                           }
                           return null;
                         },
@@ -125,7 +125,7 @@ class Payment extends StatelessWidget {
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return "Please enter your email";
+                            return "Please enter cvc";
                           }
                           return null;
                         },
