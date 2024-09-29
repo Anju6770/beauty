@@ -192,8 +192,8 @@ class _HomeState extends State<Home> {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 70,
-        width: 160,
+        height: MediaQuery.of(context).size.height*0.07,
+        width: MediaQuery.of(context).size.width*0.43,
         decoration: BoxDecoration(
           color: isSelected ? BG2 : B,
           borderRadius: BorderRadius.circular(40),

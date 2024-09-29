@@ -47,7 +47,7 @@ class SuccessfulPage extends StatelessWidget {
           SizedBox(height: 10),
           Container(
               width: double.infinity,
-              height: 400,
+              height: MediaQuery.of(context).size.height*0.5,
               child: Image.asset('${detail1.image}')),
           Padding(
             padding: const EdgeInsets.all(20),

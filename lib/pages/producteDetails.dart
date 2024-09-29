@@ -141,13 +141,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                                       Row(
                                         children: [
                                           RatingBar.builder(
-                                            itemSize: 20,
+                                            itemSize: 18,
                                             initialRating: _rating,
                                             minRating: 1,
                                             direction: Axis.horizontal,
                                             allowHalfRating: true,
                                             itemCount: 5,
-                                            itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                                            itemPadding: EdgeInsets.symmetric(horizontal: 4),
                                             itemBuilder: (context, index) => Icon(Icons.star, color: teal),
                                             onRatingUpdate: (rating) {
                                               setState(() {
@@ -155,7 +155,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                               });
                                             },
                                           ),
-                                          Gap(10),
+                                          Gap(5),
                                           Text(
                                             '$_rating',
                                             style: myStyle(18, teal),
@@ -190,13 +190,13 @@ class _ProductDetailsState extends State<ProductDetails> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                          MainContainerBuild("50ml"),
+                          Gap(2),
                           MainContainerBuild("100ml"),
-                          Gap(5),
-                          MainContainerBuild("250ml"),
-                          Gap(5),
-                          MainContainerBuild("500ml"),
-                          Gap(5),
-                          MainContainerBuild("1000ml"),
+                          Gap(2),
+                          MainContainerBuild("200ml"),
+                          Gap(2),
+                          MainContainerBuild("300ml"),
                         ],
                       ),
                     ),

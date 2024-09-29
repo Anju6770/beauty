@@ -51,13 +51,13 @@ List<Detail1> products=[
 List<Detail2> lip=[
   Detail2(
       image: "assets/images/lip1-removebg-preview.png",
-      name: "Charlotte Tilbury ",
+      name: "Charlotte ",
       payment: "\$ 17",
       brife: "brife",
       quen: "200ml"
   ),Detail2(
       image: "assets/images/lip2-removebg-preview.png",
-      name: "M.A.C Matte Nude",
+      name: "M.A.C Matte",
       payment: "\$ 18",
       brife: "brife",
       quen: "200ml"
