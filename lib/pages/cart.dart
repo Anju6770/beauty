@@ -27,8 +27,8 @@ class _CartState extends State<Cart> {
                     Navigator.of(context).pop();
                   },
                   child: Container(
-                    width: 50,
-                    height: 50,
+                    width:  MediaQuery.of(context).size.width*0.15,
+                    height:  MediaQuery.of(context).size.height*0.07,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(40),
                       border: Border.all(color: BG2, width: 3),
@@ -66,7 +66,7 @@ class _CartState extends State<Cart> {
                           Row(
                             children: [
                               Container(
-                                  height: 23,
+                                  height:  MediaQuery.of(context).size.height*0.033,
                                   child: Image(image: AssetImage("assets/images/neg.png"), fit: BoxFit.cover,)
                               ),
                               Gap(10),
@@ -78,7 +78,7 @@ class _CartState extends State<Cart> {
                               ),
                               Gap(10),
                               Container(
-                                  height: 23,
+                                  height: MediaQuery.of(context).size.height*0.033,
                                   child: Image(image: AssetImage("assets/images/pos.png"), fit: BoxFit.cover,)
                               ),
                             ],
@@ -102,8 +102,8 @@ class _CartState extends State<Cart> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 225,
-                            width: 100,
+                            height: MediaQuery.of(context).size.height*0.3,
+                            width: MediaQuery.of(context).size.width*0.3,
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage("${widget.detail1.image}"),

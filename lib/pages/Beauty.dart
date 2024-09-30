@@ -25,7 +25,7 @@ class Beauty extends StatelessWidget {
                 children: [
                   Gap(20),
                   Container(
-                    height: 160,
+                    height: MediaQuery.of(context).size.height*0.2,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       image: DecorationImage(image: AssetImage("assets/images/fell.png"),fit: BoxFit.cover)
@@ -34,7 +34,7 @@ class Beauty extends StatelessWidget {
                   Gap(10),
                   Container(
                     width: double.infinity,
-                    height: 430,
+                    height: MediaQuery.of(context).size.height*0.52,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage("assets/image/perfume-removebg-preview.png"),
@@ -58,7 +58,7 @@ class Beauty extends StatelessWidget {
                     child: Container(
                       margin: EdgeInsets.all(10),
                       width: MediaQuery.of(context).size.width * 0.7,
-                      height: 60,
+                      height: MediaQuery.of(context).size.height*0.07,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: third, width: 4),

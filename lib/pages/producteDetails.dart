@@ -48,8 +48,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                             Navigator.of(context).pop();
                           },
                           child: Container(
-                            width: 50,
-                            height: 50,
+                            width: MediaQuery.of(context).size.width*0.15,
+                            height: MediaQuery.of(context).size.height*0.07,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(40),
                               border: Border.all(color: BG2, width: 3),
@@ -73,7 +73,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                     Gap(20),
                     SizedBox(
-                      height: 500,
+                      height: MediaQuery.of(context).size.height*0.6,
                       child: ListView.builder(
                         itemCount: widget.details.quantity,
                        shrinkWrap: true,
@@ -116,7 +116,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                           InkWell(
                                             onTap: () {},
                                             child: Container(
-                                              height: 23,
+                                              height: MediaQuery.of(context).size.height*0.033,
                                               child: Image.asset(
                                                 "assets/images/neg.png",
                                                 fit: BoxFit.cover,
@@ -130,7 +130,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                           ),
                                           Gap(10),
                                           Container(
-                                            height: 23,
+                                            height: MediaQuery.of(context).size.height*0.033,
                                             child: Image.asset(
                                               "assets/images/pos.png",
                                               fit: BoxFit.cover,
@@ -166,10 +166,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                                   ),
                                 ),
                                 Positioned(
-                                  left:200,
+                                  right:5,
                                   child: Container(
                                     width: MediaQuery.of(context).size.width * 0.7,
-                                    height: 400,
+                                    height: MediaQuery.of(context).size.height*0.4,
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: AssetImage("${widget.details.image}"),
@@ -186,7 +186,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     ),
                     SizedBox(
-                      height: 55,
+                      height: MediaQuery.of(context).size.height*0.07,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -207,7 +207,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                       child: Container(
                         width: double.infinity,
-                        height: 70,
+                        height: MediaQuery.of(context).size.height*0.08,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: BG,
@@ -224,8 +224,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                                 ));
                               },
                               child: Container(
-                                height: 70,
-                                width: 80,
+                                height: MediaQuery.of(context).size.height*0.08,
+                                width: MediaQuery.of(context).size.width*0.2,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   color: BG2,

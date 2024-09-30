@@ -25,8 +25,8 @@ class Payment extends StatelessWidget {
                     Navigator.of(context).pop();
                   },
                   child: Container(
-                    width: 50,
-                    height: 50,
+                    width:  MediaQuery.of(context).size.width*0.15,
+                    height:  MediaQuery.of(context).size.height*0.07,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(40),
                       border: Border.all(color: BG2, width: 3),
@@ -45,7 +45,7 @@ class Payment extends StatelessWidget {
             Gap(30),
             Container(
                 width: double.infinity,
-                height: 280,
+                height:  MediaQuery.of(context).size.height*0.4,
                 child: Image(image: AssetImage("assets/images/Frame 304.png"),fit: BoxFit.cover,)),
             Gap(30),
           Form(

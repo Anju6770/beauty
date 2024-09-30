@@ -43,8 +43,8 @@ class _ProductState extends State<Product> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
-                              height: 80,
-                              width: 80,
+                              height: MediaQuery.of(context).size.height*0.1,
+                              width: MediaQuery.of(context).size.width*0.2,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: DecorationImage(image: AssetImage("assets/image/profile.jpg")),
@@ -77,8 +77,8 @@ class _ProductState extends State<Product> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Container(
-                        height: 48,
-                        width: 340,
+                        height: MediaQuery.of(context).size.height*0.06,
+                        width: MediaQuery.of(context).size.width*0.85,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: BG2.withOpacity(0.7),
@@ -104,7 +104,7 @@ class _ProductState extends State<Product> {
                     Text("Best Products", style: style(25, BG2, FontWeight.bold),),
                     Gap(10),
                     SizedBox(
-                      height: 230,
+                      height: MediaQuery.of(context).size.height*0.3,
                       child: ListView.builder(
                           shrinkWrap: true,
                           scrollDirection: Axis.horizontal,
@@ -133,7 +133,7 @@ class _ProductState extends State<Product> {
                                         children: [
                                           Container(
                                               padding: EdgeInsets.all(13),
-                                              height: 84,
+                                              height: MediaQuery.of(context).size.height*0.1,
                                               width: double.infinity,
                                               decoration: BoxDecoration(
                                                 borderRadius: BorderRadius.circular(15),
@@ -159,7 +159,7 @@ class _ProductState extends State<Product> {
                                                       ),
                                                       Gap(10),
                                                       Container(
-                                                          height: 23,
+                                                          height: MediaQuery.of(context).size.height*0.031,
                                                           child: Image(image: AssetImage("assets/image/bxs-plus-circle.svg.png"), fit: BoxFit.cover,)
                                                       ),
                                                     ],
@@ -175,8 +175,8 @@ class _ProductState extends State<Product> {
                                     top: -3,
                                     left: 20,
                                     child: Container(
-                                      height: 150,
-                                      width: 200,
+                                      height: MediaQuery.of(context).size.height*0.2,
+                                      width: MediaQuery.of(context).size.width*0.5,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: AssetImage("${products[index].image}"),
@@ -191,7 +191,7 @@ class _ProductState extends State<Product> {
                     ),
                     Gap(15),
                     SizedBox(
-                      height: 60,
+                      height: MediaQuery.of(context).size.height*0.07,
                       child: ListView(
                         shrinkWrap: true,
                         scrollDirection: Axis.horizontal,
@@ -228,7 +228,7 @@ class _ProductState extends State<Product> {
                                 ),
                                 color: isSelected ? BG2 : BG,
                                 child: Container(
-                                  height: 77,
+                                  height: MediaQuery.of(context).size.height*0.1,
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(13),
@@ -259,7 +259,7 @@ class _ProductState extends State<Product> {
                                             child: Column(
                                               children: [
                                                 Container(
-                                                    height: 23,
+                                                    height: MediaQuery.of(context).size.height*0.03,
                                                     child: Image(image: AssetImage("assets/images/bxs-plus-circle.svg (1).png"), fit: BoxFit.cover,)
                                                 ),
                                                 Gap(10),
@@ -284,8 +284,8 @@ class _ProductState extends State<Product> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      height: 225,
-                                      width: 100,
+                                      height: MediaQuery.of(context).size.height*0.3,
+                                      width: MediaQuery.of(context).size.width*0.25,
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: AssetImage("${lip[index].image}"),
